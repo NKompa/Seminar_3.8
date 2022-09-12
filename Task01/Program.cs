@@ -1,7 +1,7 @@
 ﻿// Задайте двумерный массив. Напишите программу, которая поменяет местами первую и последнюю строку массива.
 
 Console.WriteLine("Первоначальный массив:");
-int[,] array = new int[new Random().Next(1, 10), new Random().Next(1, 10)];
+int[,] array = new int[new Random().Next(3, 10), new Random().Next(3, 10)];
 
 for(int i=0; i<array.GetLength(0); i++)
 {
