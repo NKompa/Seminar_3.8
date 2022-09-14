@@ -9,11 +9,9 @@ for(int i=0; i<array.GetLength(0); i++)
 	{
 		array[i, j] = new Random().Next(0, 10);
 		Console.Write(array[i, j] + "\t");
-		
 	}
 	Console.WriteLine();
 }
-
 int[] temp = new int[array.GetLength(1)];
 
 for(int k=0; k<array.GetLength(1); k++)
@@ -22,7 +20,6 @@ for(int k=0; k<array.GetLength(1); k++)
 	array[0, k]= array[array.GetLength(0)-1, k];
 	array[array.GetLength(0)-1, k] = temp[k];
 }
-
 Console.WriteLine("Новый массив:");
 
 for(int i=0; i<array.GetLength(0); i++)
@@ -30,7 +27,6 @@ for(int i=0; i<array.GetLength(0); i++)
 	for(int j=0; j<array.GetLength(1); j++)
 	{
 		Console.Write(array[i, j] + "\t");
-		
 	}
 	Console.WriteLine();
 }
